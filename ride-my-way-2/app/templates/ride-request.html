@@ -1,0 +1,110 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Passengers Page</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+ </head>
+<body>
+  <div class="box3">
+    <div class="header--one">
+      <ul class="head1"> 
+     <li> <a href="index.html"> <img src="assets/images/lg.png" alt="LOGO"></a></li>
+       <li> <ul class="header--one--notifywithname">
+            <li>
+                <span class="text--greeting--grey">Hello,</span>
+                <span class="text--primary">Robinah</span>
+              </li>
+            <!-- I need to put a dropdown here--
+            <li>
+              <a href="#" class="notification">
+                2 new msg</a>
+            </li>-->
+        </ul></li>
+      </ul>
+    </div>
+  <div class="header--two">
+            <ul class="navigator">
+                    <li>
+                      <a href="mainpage2.html" class="home">
+                        Rides Requested </a>
+                    </li>
+                    <li>
+                      <a href="" class="active">
+                      Request Ride
+                        </a>
+                    </li>
+                    <li>
+                      <a href="offers-available.html" class="passengers">
+                       Offers Available
+                     </a>
+                    </li>
+                    <li>
+                      <a href="rides-history.html" class="history">
+                      My Ride History
+                     </a>
+                    </li>
+                    <li>
+                      <a href="logout.html" >
+                      Logout
+                     </a>
+                    </li>
+              </ul>
+   </div>
+   
+            
+   
+<!--new ride-->
+<h3 style="margin-left: 480"> Passengers' Page | Request Ride </h3>
+   
+      <div class="ride-table">
+    <form action="" method="POST">
+    <table style="border-collapse: collapse; width:100%;">
+      <tr >
+        <th class="thead">Date</th>
+        <td class="tdata"><input type="text" name="datepicker" id="datepicker" required length="400"/></td>
+      </tr>
+      
+        <th class="thead">From</th> 
+        <td class="tdata" ><input type="text" name="deptfrom" required /></td> 
+        </tr>
+        <tr>
+            <th class="thead">To</th>
+            <td class="tdata" ><input type="text" name="goingto" required /></td>
+        </tr>
+      
+      <tr>
+        <th class="thead">Car Category</th> 
+        <td class="tdata" >
+            <select name="seat_category" required>
+              <option disabled="disabled" selected="selected">Select a Category</option>
+              <option value="Ordinary">Ordinary</option>
+              <option value="Luxury">Luxury</option>
+          </select>
+          </td>
+        
+      <tr>
+        <th class="thead">Fare/Seat</th>
+        <td class="tdata" ><input type="text" name="fare" required /></td>
+      </tr>
+      <tr> 
+          <th class="thead">Route to be taken</th>
+          <td class="tdata" ><input type="text" name="route" required /></td>
+       </tr>
+      <tr>
+        <th class="thead">Availability Time</th>
+                    <td class="tdata" ><input type="text" name="start-time" id="start-time" required="required" /> <br>
+                      <input type="text" name="stop-time" id="stop-time" required="required" /></td>
+             </tr>
+             
+    </table>
+    <br>
+    
+        <input type="submit" name="submit" value="Request Ride" class="btn" style="margin-left: 80; width: 200px;" />
+
+
+    </form>
+  </div>
+
+  </div>    
+</body>
+</html>
